@@ -9,7 +9,11 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const LETTER = "Y"; // Y for yawning.
+// Why Y: the day ends the way it began — tired. "Yawning" is the
+// end-of-day yawn after a long day running on too little sleep, and
+// Y is its first letter, so the entry is the word's own initial.
+const WORD = "yawning";
+const LETTER = WORD[0]!.toUpperCase(); // Y for yawning.
 
 function main(): void {
   // Self-check: the entry must be exactly one character, A to Z.
